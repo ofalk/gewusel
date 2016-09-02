@@ -1,0 +1,61 @@
+{% load i18n %}
+
+      <div class="panel panel-default">
+        <div class="panel-heading"><b>{% trans "Top subcamps" %}</b></div>
+        <table class="table table-hover" id="stats_subcamptable">
+          <thead>
+            <tr>
+              <th>{% trans "Place" %}</th>
+              <th>{% trans "Subcamp" %}</th>
+              <th>{% trans "Points" %}</th>
+              <th>{% trans "Avg" %}</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.bundle.min.js"></script>
+        <script>
+          function update_table() {
+            var render_href = false;
+            if("{{ user.is_authenticated }}" == "True") {
+              render_href = true;
+            }
+            table_rows_subcamps = "";
+            $.ajax({
+              type: "GET",
+              contentType: "application/json",
+              url: '/gewusel/stats/topsubcamps/',
+            }).done(function(data, statusText, resObject) {
+              var place = 0;
+              var last_points = 0;
+              $.each(resObject.responseJSON.objects, function(i, item) {
+                  if(last_points != item.points_sum) {
+                    place++;
+                  }
+                  last_points = item.points_sum;
+                  var table_row_subcamp = '<tr><td>' + place + '.' +
+                  '<td>';
+                  if(render_href) {
+                    table_row_subcamp += '<a href="/gewusel/subcamp/' + item.subcamp_id + '/">';
+                  }
+                  table_row_subcamp += item.subcamp_name;
+                  if(render_href) {
+                    table_row_subcamp += '</a>';
+                  }
+                  avg = item.points_sum / item.patrol_count;
+                  table_row_subcamp += '</td>' +
+                    '<td><span class="badge">' + item.points_sum + '</span></td>' + 
+                    '<td><span class="badge">' + avg.toFixed(2) + '</span></td>' +
+                    '</tr>';
+                table_rows_subcamps += table_row_subcamp;
+              });
+            $('#stats_subcamptable tbody').html(table_rows_subcamps);
+            });
+            setTimeout(update_table, 10000);
+          }
+          $('#stats_subcamptable').ready(function() {
+              update_table();
+          });
+        </script>
+      </div>

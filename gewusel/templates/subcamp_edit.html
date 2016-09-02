@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block title %}{% trans "Subcamp" %} / {% trans "Edit" %}{% endblock %}
+{% block body_block %}
+{% if form.non_field_errors %}
+<div class="alert alert-danger fade in">
+{{ form.non_field_errors }}
+</div>
+{% endif %}
+<div class="form" style="width:200px">
+  <form role="form" class="form" action="" method="post">
+    {% csrf_token %}
+    {% for field in form %}
+    <div class="form-group">
+      {{ field.label_tag }}
+      {{ field }}
+    </div>
+    {% endfor %}
+    <div class="form-group">
+      <input class="form-control" type="submit" value="{% trans "Submit/Save" %}"/>
+    </div>
+  </form>
+</div>
+{% endblock %}

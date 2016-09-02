@@ -1,0 +1,7 @@
+# Countries
+- model: gewusel.country
+  fields: {country_code: AT, nicename: Austria}
+- model: gewusel.country
+  fields: {country_code: IT, nicename: Italy}
+- model: gewusel.country
+  fields: {country_code: LU, nicename: Luxembourg}

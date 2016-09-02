@@ -1,0 +1,181 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block title %}{% trans "Points" %} / {% trans "Add" %}{% endblock %}
+{% block body_block %}
+
+{% if form.non_field_errors %}
+<div class="alert alert-danger fade in">
+{{ form.non_field_errors }}
+</div>
+{% endif %}
+
+<form role="form" class="form" action="" method="post">
+  {% csrf_token %}
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="panel panel-info">
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              {% trans "Filter" %}
+              <span class="pull-right">
+                <i class="glyphicon glyphicon-chevron-up" id="filter-head" style="cursor: pointer;"></i>
+              </span>
+            </h3>
+          </div>
+          <script>
+            $("#filter-head").click(function(e){
+              var $this = $(this);
+              if(!$this.hasClass('panel-collapsed')) {
+                $this.parents('.panel').find('.panel-body').slideUp();
+                $this.addClass('panel-collapsed');
+                $this.find('i').removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
+              } else {
+                $this.parents('.panel').find('.panel-body').slideDown();
+                $this.removeClass('panel-collapsed');
+                $this.find('i').removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-up');
+              }
+            });
+          </script>
+          <div class="panel-body">
+            <div class="form-group input-group" style="width:100%;">
+              {{ form.country.label_tag }}
+              {{ form.country }}{{ form.country.errors }}
+            </div>
+
+            <div class="form-group input-group" style="width:100%;">
+              <label for="group">{% trans "Group" %}:</label>
+              <select class="form-control" id="group-select" disabled>
+                <option disabled selected value>{% trans "Select country first" %}!</option>
+              </select>
+            </div>
+            <script>
+              function getCookie(name) {
+                  var cookieValue = null;
+                  if (document.cookie && document.cookie != '') {
+                      var cookies = document.cookie.split(';');
+                      for (var i = 0; i < cookies.length; i++) {
+                          var cookie = jQuery.trim(cookies[i]);
+                          // Does this cookie string begin with the name we want?
+                          if (cookie.substring(0, name.length + 1) == (name + '=')) {
+                              cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                              break;
+                          }
+                      }
+                  }
+                  return cookieValue;
+              }
+            </script>
+            <script>
+              function update_patrols() {
+                $.ajaxSetup({
+                    beforeSend: function(xhr, settings) {
+                      xhr.setRequestHeader("X-CSRFToken", getCookie('csrftoken'));
+                    }
+                });
+                data = {
+                  country: $('#id_country option:selected').val(),
+                  group: $('#group-select option:selected').val(),
+                };
+                $.ajax({
+                  type: "POST",
+                  contentType: "application/json",
+                  url: '/gewusel/patrol/json/',
+                  data: JSON.stringify(data),
+                }).done(function(data, statusText, resObject) {
+                  $('#id_patrol').find('option').remove().end();
+                  option = new Option('---------- {% trans "Choose patrol" %} ----------');
+                  option.disabled = false;
+                  $('#id_patrol').append(option);
+                  lastFirst = '';
+                  $.each(resObject.responseJSON.objects, function(i, item) {
+                    $('#id_patrol').append(function() {
+                      if(item.name.charAt(0) != lastFirst) {
+                        option = new Option('---------- ' + item.name.charAt(0) + ' ----------');
+                        option.disabled = true;
+                        $('#id_patrol').append(option);
+                        lastFirst = item.name.charAt(0);
+                      }
+                      obj = new Option(item.name + ' (' + item.group_name + ')', item.pk);
+                      {% if form.patrol.value %}
+                      if(item.pk == {{ form.patrol.value }}) {
+                        obj.selected = true;
+                      }
+                      {% endif %}
+                      return obj;
+                    });
+                  });
+                  if($("#id_patrol")[0].options.length == 3) {
+                    $("#id_patrol")[0].options[2].selected = true;
+                  }
+                });
+              }
+            </script>
+            <script>
+              $('#id_country').change(function() {
+                objects = update_patrols();
+                $("#group-select")[0].options.length = 1;
+                $.get("/gewusel/group/" + $('#id_country option:selected').val() + "/json/", function(data) {
+                  $.each(data.objects, function(i, item) {
+                    $('#group-select').append(
+                      new Option(item.name, item.pk));
+                  });
+                  $('#group-select').prop('disabled', false);
+                  $("#group-select option[value='']").prop('text', "{% trans "Choose group" %}");
+                  $("#group-select option[value='']").prop('disabled', false);
+                  $("#group-select option[value='']").prop('selected', true);
+                });
+              });
+            </script>
+          </div> <!-- panel-body -->
+        </div> <!-- panel / panel-info -->
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="panel panel-primary">
+          <div class="panel-heading"><h3 class="panel-title">{% trans "Selection" %}</h3></div>
+          <div class="panel-body">
+
+            <div class="form-group input-group" style="width:100%;">
+              {{ form.patrol.label_tag }}
+              {{ form.patrol }}{{ form.patrol.errors }}
+            </div>
+            <script>
+              $('#group-select').change(function() {
+                update_patrols();
+              });
+              $('#patrol-select').ready(function() {
+                update_patrols();
+              });
+              function set_default() {
+                {% if forms.errors %}
+                $("#id_country option[value='1']").prop('selected', true);
+                {% endif %}
+              }
+              $('#id_country').ready(function() {
+                set_default();
+                $('#id_country').change();
+              });
+            </script>
+
+            <div class="form-group">
+              {{ form.points.label_tag }}
+              {{ form.points }}{{ form.points.errors }}
+            </div>
+
+            <div class="form-group">
+              {{ form.game.label_tag }}
+              {{ form.game }}{{ form.game.errors }}
+            </div>
+
+            <div class="form-group">
+              <input class="form-control" type="submit" value="{% trans "Submit/Save" %}"/>
+            </div>
+          </div> <!-- panel-body -->
+        </div> <!-- panel -->
+      </div> <!-- col -->
+    </div> <!-- row -->
+  </div> <!-- container -->
+</form>
+{% endblock %}

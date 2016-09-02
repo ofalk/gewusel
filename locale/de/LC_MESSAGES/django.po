@@ -1,0 +1,274 @@
+# German translation for Gewusel.
+# Copyright (C) 2016
+# This file is distributed under the same license as the Gewusel package.
+# Oliver Falk <oliver@linux-kernel.at>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-08-06 17:37+0200\n"
+"PO-Revision-Date: 2016-07-22 08:11+0200\n"
+"Last-Translator: Oliver Falk <oliver@linux-kernel.at>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: gewusel/forms.py:14 gewusel/templates/setting.html:12
+#: gewusel/templates/setting_edit.html:3
+msgid "Setting"
+msgstr "Einstellung"
+
+#: gewusel/forms.py:19 gewusel/templates/setting.html:13
+msgid "Value"
+msgstr "Wert"
+
+#: gewusel/forms.py:30 gewusel/forms.py:53 gewusel/forms.py:70
+#: gewusel/templates/group.html:12 gewusel/templates/patrol.html:13
+#: gewusel/templates/subcamp.html:12
+msgid "Name"
+msgstr "Name"
+
+#: gewusel/forms.py:35 gewusel/templates/group.html:3
+#: gewusel/templates/group_edit.html:3 gewusel/templates/patrol.html:14
+#: gewusel/templates/patrol.html:70 gewusel/templates/points.html:13
+#: gewusel/templates/points_add.html:28 gewusel/templates/profile.html:3
+#: gewusel/templates/toppatrols.html:10
+msgid "Group"
+msgstr "Gruppe"
+
+#: gewusel/forms.py:41 gewusel/templates/base.html:67
+#: gewusel/templates/patrol.html:16 gewusel/templates/patrol.html:74
+#: gewusel/templates/subcamp.html:3 gewusel/templates/subcamp_edit.html:3
+#: gewusel/templates/topsubcamps.html:9
+msgid "Subcamp"
+msgstr "Unterlager"
+
+#: gewusel/forms.py:58 gewusel/forms.py:98 gewusel/templates/group.html:13
+#: gewusel/templates/group.html:60 gewusel/templates/patrol.html:15
+msgid "Country"
+msgstr "Land"
+
+#: gewusel/forms.py:81 gewusel/templates/base.html:44
+#: gewusel/templates/base.html:53 gewusel/templates/patrol.html:79
+#: gewusel/templates/points.html:3 gewusel/templates/points.html:7
+#: gewusel/templates/points.html:11 gewusel/templates/points_add.html:3
+#: gewusel/templates/points_edit.html:3 gewusel/templates/stats.html:11
+#: gewusel/templates/toppatrols.html:11 gewusel/templates/topsubcamps.html:10
+msgid "Points"
+msgstr "Punkte"
+
+#: gewusel/forms.py:86 gewusel/templates/patrol_edit.html:3
+#: gewusel/templates/points.html:12 gewusel/templates/stats.html:12
+#: gewusel/templates/toppatrols.html:9
+msgid "Patrol"
+msgstr "Patrulle"
+
+#: gewusel/forms.py:92 gewusel/templates/points.html:14
+#: gewusel/templates/stats.html:13
+msgid "Game"
+msgstr "Spiel"
+
+#: gewusel/templates/base.html:56 gewusel/templates/points_add.html:16
+#: gewusel/templates/points_edit.html:11
+msgid "Add points"
+msgstr "Punkte hinzufügen"
+
+#: gewusel/templates/base.html:58
+msgid "View"
+msgstr "Ansehen"
+
+#: gewusel/templates/base.html:59
+msgid "Live"
+msgstr "Live"
+
+#: gewusel/templates/base.html:60
+msgid "Top"
+msgstr "Top"
+
+#: gewusel/templates/base.html:65 gewusel/templates/group.html:64
+#: gewusel/templates/patrol.html:3 gewusel/templates/patrol.html:8
+#: gewusel/templates/subcamp.html:49
+msgid "Patrols"
+msgstr "Patrullen"
+
+#: gewusel/templates/base.html:66 gewusel/templates/group.html:8
+msgid "Groups"
+msgstr "Gruppen"
+
+#: gewusel/templates/base.html:72
+msgid "Language"
+msgstr "Sprache"
+
+#: gewusel/templates/base.html:93
+msgid "Login"
+msgstr "Anmelden"
+
+#: gewusel/templates/base.html:97
+msgid "Profile"
+msgstr "Profil"
+
+#: gewusel/templates/base.html:98
+msgid "Logout"
+msgstr "Abmelden"
+
+#: gewusel/templates/base.html:106
+msgid "Administration"
+msgstr "Administration"
+
+#: gewusel/templates/base.html:110 gewusel/templates/profile_subnav.html:5
+#: gewusel/templates/setting.html:3 gewusel/templates/setting.html:7
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: gewusel/templates/base.html:115
+msgid "Legal"
+msgstr "Legales"
+
+#: gewusel/templates/base.html:117 gewusel/templates/tos.html:3
+msgid "Terms of service"
+msgstr "Servicebedingungen"
+
+#: gewusel/templates/base.html:118 gewusel/templates/privacy.html:3
+msgid "Privacy"
+msgstr "Datenschutz"
+
+#: gewusel/templates/base.html:119
+msgid "Contact"
+msgstr "Kontakt"
+
+#: gewusel/templates/base.html:120
+msgid "Impress"
+msgstr "Impressum"
+
+#: gewusel/templates/group.html:15 gewusel/templates/patrol.html:18
+#: gewusel/templates/setting.html:15 gewusel/templates/subcamp.html:14
+msgid "Actions"
+msgstr "Aktionen"
+
+#: gewusel/templates/group_edit.html:3 gewusel/templates/patrol_edit.html:3
+#: gewusel/templates/points_edit.html:3 gewusel/templates/setting.html:24
+#: gewusel/templates/setting_edit.html:3 gewusel/templates/subcamp_edit.html:3
+msgid "Edit"
+msgstr "Bearbeiten"
+
+#: gewusel/templates/group_edit.html:15 gewusel/templates/patrol_edit.html:20
+#: gewusel/templates/points_add.html:149 gewusel/templates/points_edit.html:33
+#: gewusel/templates/setting_edit.html:20
+#: gewusel/templates/subcamp_edit.html:20
+msgid "Submit/Save"
+msgstr "Abschicken/Speichern"
+
+#: gewusel/templates/patrol.html:88
+msgid "No points yet"
+msgstr "Keine Punkte gefunden"
+
+#: gewusel/templates/points.html:15 gewusel/templates/stats.html:14
+msgid "Time entered"
+msgstr "Eingabezeit"
+
+#: gewusel/templates/points.html:17
+msgid "Action"
+msgstr "Aktion"
+
+#: gewusel/templates/points.html:20
+msgid "Entered by"
+msgstr "Eingegeben von"
+
+#: gewusel/templates/points_add.html:3
+msgid "Add"
+msgstr "Hinzufügen"
+
+#: gewusel/templates/points_add.html:20
+msgid "Filter"
+msgstr "Filter"
+
+#: gewusel/templates/points_add.html:30
+msgid "Select country first"
+msgstr "Zuerst Land auswählen"
+
+#: gewusel/templates/points_add.html:68
+msgid "Choose patrol"
+msgstr "Patrulle auswählen"
+
+#: gewusel/templates/points_add.html:105
+msgid "Choose group"
+msgstr "Gruppe auswählen"
+
+#: gewusel/templates/points_add.html:115
+msgid "Selection"
+msgstr "Auswahl"
+
+#: gewusel/templates/privacy.html:9
+msgid "Privacy policy"
+msgstr "Datenschutz"
+
+#: gewusel/templates/profile.html:16 gewusel/templates/profile_subnav.html:8
+msgid "Account"
+msgstr "Konto"
+
+#: gewusel/templates/profile.html:21
+msgid "First name"
+msgstr "Vorname"
+
+#: gewusel/templates/profile.html:25
+msgid "Last name"
+msgstr "Nachname"
+
+#: gewusel/templates/profile.html:29
+msgid "Username"
+msgstr "Benutzername"
+
+#: gewusel/templates/profile.html:33
+msgid "Email"
+msgstr "E-Mail"
+
+#: gewusel/templates/profile.html:37
+msgid "Gravatar"
+msgstr "Gravatar"
+
+#: gewusel/templates/profile.html:38
+msgid "Change"
+msgstr "Ändern"
+
+#: gewusel/templates/stats.html:3 gewusel/templates/stats.html:7
+msgid "Live statistics"
+msgstr "Echtzeitstatistiken"
+
+#: gewusel/templates/subcamp.html:8
+msgid "Subcamps"
+msgstr "Unterlager"
+
+#: gewusel/templates/top.html:3
+msgid "Top 10"
+msgstr "Top 10"
+
+#: gewusel/templates/top.html:10 gewusel/templates/toppatrols.html:4
+msgid "Top patrols"
+msgstr "Top Patrullen"
+
+#: gewusel/templates/top.html:11
+msgid "The patrol stats are public accessible at a later point"
+msgstr "Die Patrullenstatistiken sind zu einem späteren Zeitpunkt frei zugänglich"
+
+#: gewusel/templates/toppatrols.html:8 gewusel/templates/topsubcamps.html:8
+msgid "Place"
+msgstr "Platz"
+
+#: gewusel/templates/topsubcamps.html:4
+msgid "Top subcamps"
+msgstr "Top Unterlager"
+
+#: pfadi/settings.py:138
+msgid "German"
+msgstr "Deutsch"
+
+#: pfadi/settings.py:139
+msgid "English"
+msgstr "Englisch"
+
+#~ msgid "setting"
+#~ msgstr "Einstellung"

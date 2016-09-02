@@ -1,0 +1,12 @@
+**/__pycache__/
+db.sqlite3
+
+locale/*/LC_MESSAGES/*.mo
+temp/*
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+
+config.py

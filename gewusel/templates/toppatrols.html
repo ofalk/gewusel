@@ -1,0 +1,116 @@
+{% load i18n %}
+
+      <div class="panel panel-default">
+        <div class="panel-heading"><b>{% trans "Top patrols" %}</b></div>
+        <table class="table table-hover" id="stats_patroltable">
+          <thead>
+            <tr>
+              <th>{% trans "Place" %}</th>
+              <th>{% trans "Patrol" %}</th>
+              <th class="hidden-xs">{% trans "Group" %}</th>
+              <th>{% trans "Points" %}</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.bundle.min.js"></script>
+        <script>
+          function update_table_and_chart() {
+            var render_href = false;
+            if("{{ user.is_authenticated }}" == "True") {
+              render_href = true;
+            }
+            data_points = [];
+            data_patrols = [];
+            table_rows = "";
+            $.ajax({
+              type: "GET",
+              contentType: "application/json",
+              url: '/gewusel/stats/toppatrols/',
+            }).done(function(data, statusText, resObject) {
+              var place = 0;
+              var last_points = 0;
+              $.each(resObject.responseJSON.objects, function(i, item) {
+                  if(last_points != item.sum) {
+                    place++;
+                  }
+                  last_points = item.sum;
+                  var table_row = '<tr><td>' + place + '.' +
+                  '<td>';
+                  if(render_href) {
+                    table_row += '<a href="/gewusel/patrol/' + item.patrol_id + '/">';
+                  }
+                  table_row += item.patrol_name;
+                  if(render_href) {
+                    table_row += '</a>';
+                  }
+                  table_row += '<div class="visible-xs" style="font-size:10px">';
+                  if(render_href) {
+                    table_row += '<a href="/gewusel/group/' + item.group_id + '/">';
+                  }
+                  table_row += item.group_name;
+                  if(render_href) {
+                    table_row += '</a>';
+                  }
+                  table_row += '</div>' +
+                  '<td class="hidden-xs">';
+                  if(render_href) {
+                    table_row += '<a href="/gewusel/group/' + item.group_id + '/">';
+                  }
+                  table_row += item.group_name;
+                  if(render_href) {
+                    table_row += '</a>';
+                  }
+                  table_row += '</td>' +
+                  '<td><span class="badge">' + item.sum + '</span></td>' +
+                  '</tr>';
+                table_rows += table_row;
+                data_points.push(item.sum);
+                data_patrols.push(item.patrol_name);
+              });
+            $('#stats_patroltable tbody').html(table_rows);
+            var ctx = $("#toppatrols");
+            var myChart = new Chart(ctx, {
+              type: 'doughnut',
+              data: {
+                labels: data_patrols,
+                datasets: [{
+                  label: 'Points',
+                  data: data_points,
+                  backgroundColor: [
+                    'rgba(255, 99, 132, 0.6)',
+                    'rgba(54, 162, 235, 0.6)',
+                    'rgba(255, 206, 86, 0.6)',
+                    'rgba(75, 192, 192, 0.6)',
+                    'rgba(153, 102, 255, 0.6)',
+                    'rgba(255, 159, 64, 0.6)',
+                  ],
+                }]
+              },
+              options: {
+                animation: {
+                  animateRotate: false,
+                  animateScale: false,
+                },
+                title: {
+                  position: 'top',
+                  text: 'Points',
+                  display: true,
+                },
+                legend: {
+                  position: 'bottom',
+                  labels: {
+                    boxWidth: 10,
+                  },
+                },
+              },
+            });
+            });
+            setTimeout(update_table_and_chart, 10000);
+          }
+          $('#stats_patroltable').ready(function() {
+              update_table_and_chart();
+          });
+        </script>
+      </div>

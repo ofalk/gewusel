@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block title %}{% trans "Settings" %}{% endblock %}
+{% block body_block %}
+<center>
+    <div class="panel panel-default" style="width:80%">
+      <div class="panel-heading"><b>{% trans "Settings" %}</b></div>
+      <div class="table-responsive">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>{% trans "Setting" %}</th>
+            <th>{% trans "Value" %}</th>
+            {% if perms.gewusel.change_setting %}
+              <th>{% trans "Actions" %}</th>
+            {% endif %}
+          </tr>
+        </thead>
+        <tbody>
+          {% for object in object_list %}
+              <tr>
+                <td>{{ object.setting }}</td>
+                <td>{{ object.value }}</td>
+                <td><a href="{% url 'setting-edit' object.pk %}">{% trans 'Edit' %}</a></td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+</center>
+
+{% endblock %}

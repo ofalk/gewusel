@@ -1,0 +1,910 @@
+- model: gewusel.patrol
+  fields:
+    name: Die coolen Jupfis
+    group: [Brixen St. Michael, IT]
+    subcamp: [London]
+- model: gewusel.patrol
+  fields:
+    name: Chipsies
+    group: [Kirchberg / Wechsel, AT]
+    subcamp: [London]
+- model: gewusel.patrol
+  fields:
+    name: Ursis
+    group: [Kirchberg / Wechsel, AT]
+    subcamp: [London]
+- model: gewusel.patrol
+  fields:
+    name: Agis
+    group: [Kirchberg / Wechsel, AT]
+    subcamp: [London]
+- model: gewusel.patrol
+  fields:
+    name: Die Bienchen
+    group: ["Kritzendorf-H\xF6flein", AT]
+    subcamp: [London]
+- model: gewusel.patrol
+  fields:
+    name: Die Gurken
+    group: ["Kritzendorf-H\xF6flein", AT]
+    subcamp: [London]
+- model: gewusel.patrol
+  fields:
+    name: Die Zebras
+    group: [Stockerau, AT]
+    subcamp: [London]
+- model: gewusel.patrol
+  fields:
+    name: Clueianer
+    group: ["St. P\xF6lten", AT]
+    subcamp: [London]
+- model: gewusel.patrol
+  fields:
+    name: Flaschen
+    group: ["St. P\xF6lten", AT]
+    subcamp: [London]
+- model: gewusel.patrol
+  fields:
+    name: "Waldh\xF6rnchen"
+    group: ["St. P\xF6lten", AT]
+    subcamp: [London]
+- model: gewusel.patrol
+  fields:
+    name: The crazy Donuts
+    group: [Trumau, AT]
+    subcamp: [London]
+- model: gewusel.patrol
+  fields:
+    name: Die coolen Smileys
+    group: [Trumau, AT]
+    subcamp: [London]
+- model: gewusel.patrol
+  fields:
+    name: Wildschwein
+    group: [Wien 12 Erzherzog Johann, AT]
+    subcamp: [London]
+- model: gewusel.patrol
+  fields:
+    name: Murmeltier
+    group: [Wien 12 Erzherzog Johann, AT]
+    subcamp: [London]
+- model: gewusel.patrol
+  fields:
+    name: Wolf
+    group: [Wien 12 Erzherzog Johann, AT]
+    subcamp: [London]
+- model: gewusel.patrol
+  fields:
+    name: Igel
+    group: [Wien 66, AT]
+    subcamp: [London]
+- model: gewusel.patrol
+  fields:
+    name: Axolotl
+    group: [Wien 80 Enzian, AT]
+    subcamp: [London]
+- model: gewusel.patrol
+  fields:
+    name: Feuersalamander
+    group: [Wien 80 Enzian, AT]
+    subcamp: [London]
+- model: gewusel.patrol
+  fields:
+    name: Salamander
+    group: [Wien 80 Enzian, AT]
+    subcamp: [London]
+- model: gewusel.patrol
+  fields:
+    name: "Glapagosschildkr\xF6ten"
+    group: [Wien 80 Enzian, AT]
+    subcamp: [London]
+- model: gewusel.patrol
+  fields:
+    name: Gepard
+    group: [Wien 80 Enzian, AT]
+    subcamp: [London]
+- model: gewusel.patrol
+  fields:
+    name: Puma
+    group: [Abtenau, AT]
+    subcamp: [Sydney]
+- model: gewusel.patrol
+  fields:
+    name: Die kulon Schafe
+    group: [Berndorf, AT]
+    subcamp: [Sydney]
+- model: gewusel.patrol
+  fields:
+    name: "Die schmutzigen Waschb\xE4ren"
+    group: [Berndorf, AT]
+    subcamp: [Sydney]
+- model: gewusel.patrol
+  fields:
+    name: Die yolo Katzen
+    group: [Berndorf, AT]
+    subcamp: [Sydney]
+- model: gewusel.patrol
+  fields:
+    name: Waldhasen
+    group: [Biedermannsdorf, AT]
+    subcamp: [Sydney]
+- model: gewusel.patrol
+  fields:
+    name: Minions
+    group: [Biedermannsdorf, AT]
+    subcamp: [Sydney]
+- model: gewusel.patrol
+  fields:
+    name: Adler
+    group: [Graz Umgebung Nord, AT]
+    subcamp: [Sydney]
+- model: gewusel.patrol
+  fields:
+    name: "W\xF6lfe"
+    group: [Graz Umgebung Nord, AT]
+    subcamp: [Sydney]
+- model: gewusel.patrol
+  fields:
+    name: NoNames
+    group: [Klagenfurt 6, AT]
+    subcamp: [Sydney]
+- model: gewusel.patrol
+  fields:
+    name: Wild Cats
+    group: [Kirchschlag, AT]
+    subcamp: [Sydney]
+- model: gewusel.patrol
+  fields:
+    name: Adler
+    group: [Maria Enzersdorf Liechtenstein, AT]
+    subcamp: [Sydney]
+- model: gewusel.patrol
+  fields:
+    name: "W\xF6lfe"
+    group: [Maria Enzersdorf Liechtenstein, AT]
+    subcamp: [Sydney]
+- model: gewusel.patrol
+  fields:
+    name: Luchsen
+    group: [Maria Enzersdorf Liechtenstein, AT]
+    subcamp: [Sydney]
+- model: gewusel.patrol
+  fields:
+    name: Fuchsen
+    group: [Maria Enzersdorf Liechtenstein, AT]
+    subcamp: [Sydney]
+- model: gewusel.patrol
+  fields:
+    name: Tiger
+    group: [Maria Enzersdorf Liechtenstein, AT]
+    subcamp: [Sydney]
+- model: gewusel.patrol
+  fields:
+    name: Golden Eagle
+    group: ["St. P\xF6lten Viehofen", AT]
+    subcamp: [Sydney]
+- model: gewusel.patrol
+  fields:
+    name: Silver Chameleons
+    group: ["St. P\xF6lten Viehofen", AT]
+    subcamp: [Sydney]
+- model: gewusel.patrol
+  fields:
+    name: Rabe
+    group: ["Th\xFCringen St. Stephan", AT]
+    subcamp: [Sydney]
+- model: gewusel.patrol
+  fields:
+    name: Adler
+    group: ["Th\xFCringen St. Stephan", AT]
+    subcamp: [Sydney]
+- model: gewusel.patrol
+  fields:
+    name: Wolf
+    group: ["Th\xFCringen St. Stephan", AT]
+    subcamp: [Sydney]
+- model: gewusel.patrol
+  fields:
+    name: Schnepfen
+    group: [Wien 55 Hugo v. Hoffmansthal, AT]
+    subcamp: [Sydney]
+- model: gewusel.patrol
+  fields:
+    name: Adler
+    group: [Wien 55 Hugo v. Hoffmansthal, AT]
+    subcamp: [Sydney]
+- model: gewusel.patrol
+  fields:
+    name: Rabe
+    group: [Wien 55 Hugo v. Hoffmansthal, AT]
+    subcamp: [Sydney]
+- model: gewusel.patrol
+  fields:
+    name: Tiger
+    group: [Wien 55 Hugo v. Hoffmansthal, AT]
+    subcamp: [Sydney]
+- model: gewusel.patrol
+  fields:
+    name: Stier
+    group: [Wien 55 Hugo v. Hoffmansthal, AT]
+    subcamp: [Sydney]
+- model: gewusel.patrol
+  fields:
+    name: Blackhawk
+    group: [Absdorf St. Mauritius, AT]
+    subcamp: [Bangkok]
+- model: gewusel.patrol
+  fields:
+    name: "W\xF6lfe"
+    group: [Frauental-Rassach, AT]
+    subcamp: [Bangkok]
+- model: gewusel.patrol
+  fields:
+    name: Adler
+    group: [Frauental-Rassach, AT]
+    subcamp: [Bangkok]
+- model: gewusel.patrol
+  fields:
+    name: Blind fluffy cobras
+    group: [Klagenfurt 4 Moosburg, AT]
+    subcamp: [Bangkok]
+- model: gewusel.patrol
+  fields:
+    name: Blobfisch
+    group: [Kaltenleutgeben, AT]
+    subcamp: [Bangkok]
+- model: gewusel.patrol
+  fields:
+    name: "Mehlw\xFCrmer"
+    group: [Kaltenleutgeben, AT]
+    subcamp: [Bangkok]
+- model: gewusel.patrol
+  fields:
+    name: The 6 Melody's
+    group: [Karlstetten, AT]
+    subcamp: [Bangkok]
+- model: gewusel.patrol
+  fields:
+    name: "Die Nash\xF6rner"
+    group: [Karlstetten, AT]
+    subcamp: [Bangkok]
+- model: gewusel.patrol
+  fields:
+    name: Black Ops
+    group: [Karlstetten, AT]
+    subcamp: [Bangkok]
+- model: gewusel.patrol
+  fields:
+    name: Leoparden
+    group: [Leoben, AT]
+    subcamp: [Bangkok]
+- model: gewusel.patrol
+  fields:
+    name: "Die wilden Pinguine P\xF6chlarn"
+    group: ["P\xF6chlarn", AT]
+    subcamp: [Bangkok]
+- model: gewusel.patrol
+  fields:
+    name: Falken
+    group: [Schwanberg, AT]
+    subcamp: [Bangkok]
+- model: gewusel.patrol
+  fields:
+    name: Elements
+    group: [Telfs, AT]
+    subcamp: [Bangkok]
+- model: gewusel.patrol
+  fields:
+    name: Dark Wolves
+    group: [Telfs, AT]
+    subcamp: [Bangkok]
+- model: gewusel.patrol
+  fields:
+    name: Tigerhaie
+    group: [Wien 21 Liechtenstein, AT]
+    subcamp: [Bangkok]
+- model: gewusel.patrol
+  fields:
+    name: Schimpansen
+    group: [Wien 21 Liechtenstein, AT]
+    subcamp: [Bangkok]
+- model: gewusel.patrol
+  fields:
+    name: Leoparden
+    group: [Wien 21 Liechtenstein, AT]
+    subcamp: [Bangkok]
+- model: gewusel.patrol
+  fields:
+    name: Schneeeulen
+    group: [Wien 21 Liechtenstein, AT]
+    subcamp: [Bangkok]
+- model: gewusel.patrol
+  fields:
+    name: Panda
+    group: [Wien 28 St. Georg Kagran, AT]
+    subcamp: [Bangkok]
+- model: gewusel.patrol
+  fields:
+    name: Wombat
+    group: [Wien 28 St. Georg Kagran, AT]
+    subcamp: [Bangkok]
+- model: gewusel.patrol
+  fields:
+    name: Gepard
+    group: [Wien 28 St. Georg Kagran, AT]
+    subcamp: [Bangkok]
+- model: gewusel.patrol
+  fields:
+    name: Adler
+    group: [Zams, AT]
+    subcamp: [Bangkok]
+- model: gewusel.patrol
+  fields:
+    name: Die Emojis
+    group: [Aschbach, AT]
+    subcamp: [Las Vegas]
+- model: gewusel.patrol
+  fields:
+    name: Salamander
+    group: [Baden, AT]
+    subcamp: [Las Vegas]
+- model: gewusel.patrol
+  fields:
+    name: "F\xFCchse"
+    group: [Baden, AT]
+    subcamp: [Las Vegas]
+- model: gewusel.patrol
+  fields:
+    name: "Eisv\xF6gel"
+    group: [Baden, AT]
+    subcamp: [Las Vegas]
+- model: gewusel.patrol
+  fields:
+    name: Flugsaurier
+    group: [Baden, AT]
+    subcamp: [Las Vegas]
+- model: gewusel.patrol
+  fields:
+    name: "W\xF6lfe"
+    group: [Baden, AT]
+    subcamp: [Las Vegas]
+- model: gewusel.patrol
+  fields:
+    name: "Eichk\xE4tzchen"
+    group: [Ebreichsdorf, AT]
+    subcamp: [Las Vegas]
+- model: gewusel.patrol
+  fields:
+    name: Biber
+    group: [Ebreichsdorf, AT]
+    subcamp: [Las Vegas]
+- model: gewusel.patrol
+  fields:
+    name: "Adler/Steinb\xF6cke"
+    group: [Feldkirch St. Georg, AT]
+    subcamp: [Las Vegas]
+- model: gewusel.patrol
+  fields:
+    name: "Verr\xFCckte H\xFChner"
+    group: [Feldkirch St. Georg, AT]
+    subcamp: [Las Vegas]
+- model: gewusel.patrol
+  fields:
+    name: "S\xFC\xDFe Schokom\xE4use"
+    group: [Graz 2, AT]
+    subcamp: [Las Vegas]
+- model: gewusel.patrol
+  fields:
+    name: Blau ara
+    group: [Gumpoldskirchen, AT]
+    subcamp: [Las Vegas]
+- model: gewusel.patrol
+  fields:
+    name: Fruchtfliegen
+    group: [Gumpoldskirchen, AT]
+    subcamp: [Las Vegas]
+- model: gewusel.patrol
+  fields:
+    name: Paviane
+    group: [Gumpoldskirchen, AT]
+    subcamp: [Las Vegas]
+- model: gewusel.patrol
+  fields:
+    name: Falken/Rothirsche
+    group: [Klosterneuburg Weidling, AT]
+    subcamp: [Las Vegas]
+- model: gewusel.patrol
+  fields:
+    name: "Chillkr\xF6ten"
+    group: [Wien 31 Stadlau, AT]
+    subcamp: [Las Vegas]
+- model: gewusel.patrol
+  fields:
+    name: Adler/Biber
+    group: [Altenstadt Levis, AT]
+    subcamp: [Montreal]
+- model: gewusel.patrol
+  fields:
+    name: Mr. Beans
+    group: [Amstetten, AT]
+    subcamp: [Montreal]
+- model: gewusel.patrol
+  fields:
+    name: Sportacus
+    group: [Amstetten, AT]
+    subcamp: [Montreal]
+- model: gewusel.patrol
+  fields:
+    name: Veilchen
+    group: [Gablitz, AT]
+    subcamp: [Montreal]
+- model: gewusel.patrol
+  fields:
+    name: "F\xFCchse"
+    group: [Gablitz, AT]
+    subcamp: [Montreal]
+- model: gewusel.patrol
+  fields:
+    name: Black Mambas
+    group: [Gablitz, AT]
+    subcamp: [Montreal]
+- model: gewusel.patrol
+  fields:
+    name: Fratelli d'Italia
+    group: [Pfadfinderstamm Eppan, IT]
+    subcamp: [Montreal]
+- model: gewusel.patrol
+  fields:
+    name: Pandalinen
+    group: [Kierling Gugging, AT]
+    subcamp: [Montreal]
+- model: gewusel.patrol
+  fields:
+    name: Schwechat Hu!
+    group: [Schwechat, AT]
+    subcamp: [Montreal]
+- model: gewusel.patrol
+  fields:
+    name: "Ph\xF6nix"
+    group: [Strasshof, AT]
+    subcamp: [Montreal]
+- model: gewusel.patrol
+  fields:
+    name: "Lotusbl\xFCten"
+    group: [Strasshof, AT]
+    subcamp: [Montreal]
+- model: gewusel.patrol
+  fields:
+    name: Venusfliegenfalle
+    group: [Strasshof, AT]
+    subcamp: [Montreal]
+- model: gewusel.patrol
+  fields:
+    name: Panther
+    group: [Wien 18 Mafeking, AT]
+    subcamp: [Montreal]
+- model: gewusel.patrol
+  fields:
+    name: Panda
+    group: [Wien 18 Mafeking, AT]
+    subcamp: [Montreal]
+- model: gewusel.patrol
+  fields:
+    name: Thestrale/Biber
+    group: [Wien 20/26, AT]
+    subcamp: [Montreal]
+- model: gewusel.patrol
+  fields:
+    name: Wolf/Fuchsen
+    group: [Wien 41 Prinz Eugen, AT]
+    subcamp: [Montreal]
+- model: gewusel.patrol
+  fields:
+    name: "W\xF6lfe"
+    group: [Wien 5, AT]
+    subcamp: [Montreal]
+- model: gewusel.patrol
+  fields:
+    name: Cobra
+    group: [Zeiselmauer, AT]
+    subcamp: [Montreal]
+- model: gewusel.patrol
+  fields:
+    name: "B\xE4r"
+    group: [Zeiselmauer, AT]
+    subcamp: [Montreal]
+- model: gewusel.patrol
+  fields:
+    name: "Eichh\xF6rnchen"
+    group: [Atzenbrugg-Heiligeneich, AT]
+    subcamp: [Paris]
+- model: gewusel.patrol
+  fields:
+    name: Turmfalken
+    group: [Atzenbrugg-Heiligeneich, AT]
+    subcamp: [Paris]
+- model: gewusel.patrol
+  fields:
+    name: "F\xFCchse"
+    group: [Atzenbrugg-Heiligeneich, AT]
+    subcamp: [Paris]
+- model: gewusel.patrol
+  fields:
+    name: Schwarze Panther
+    group: [Klagenfurt 5 Prinz Eugen, AT]
+    subcamp: [Paris]
+- model: gewusel.patrol
+  fields:
+    name: "Feney-F\xFCchse"
+    group: [Klagenfurt 5 Prinz Eugen, AT]
+    subcamp: [Paris]
+- model: gewusel.patrol
+  fields:
+    name: Schneeleoparden
+    group: [Klagenfurt 5 Prinz Eugen, AT]
+    subcamp: [Paris]
+- model: gewusel.patrol
+  fields:
+    name: Seeteufel
+    group: [Lilienfeld, AT]
+    subcamp: [Paris]
+- model: gewusel.patrol
+  fields:
+    name: "Schweinchen-Einh\xF6rner"
+    group: [Lilienfeld, AT]
+    subcamp: [Paris]
+- model: gewusel.patrol
+  fields:
+    name: Jules Bleser
+    group: [Jules Bleser Monnerech, LU]
+    subcamp: [Paris]
+- model: gewusel.patrol
+  fields:
+    name: Die flinken Adler
+    group: [Markersdorf St. Martin, AT]
+    subcamp: [Paris]
+- model: gewusel.patrol
+  fields:
+    name: "Die Silberw\xF6lfe"
+    group: [Markersdorf St. Martin, AT]
+    subcamp: [Paris]
+- model: gewusel.patrol
+  fields:
+    name: Die 7 Guideslein
+    group: [Markersdorf St. Martin, AT]
+    subcamp: [Paris]
+- model: gewusel.patrol
+  fields:
+    name: Flinke Falken
+    group: ["Maria Enzersdorf S\xFCdstadt", AT]
+    subcamp: [Paris]
+- model: gewusel.patrol
+  fields:
+    name: "Die Seek\xFChe"
+    group: ["Maria Enzersdorf S\xFCdstadt", AT]
+    subcamp: [Paris]
+- model: gewusel.patrol
+  fields:
+    name: "Eichh\xF6rnchen"
+    group: [Wien 36, AT]
+    subcamp: [Paris]
+- model: gewusel.patrol
+  fields:
+    name: "Cham\xE4leon"
+    group: [Wien 36, AT]
+    subcamp: [Paris]
+- model: gewusel.patrol
+  fields:
+    name: Hase
+    group: [Wien 36, AT]
+    subcamp: [Paris]
+- model: gewusel.patrol
+  fields:
+    name: Delfin
+    group: [Wien 36, AT]
+    subcamp: [Paris]
+- model: gewusel.patrol
+  fields:
+    name: Piranha
+    group: [Wien 36, AT]
+    subcamp: [Paris]
+- model: gewusel.patrol
+  fields:
+    name: "Flinke F\xFCchse"
+    group: [Wiener Neudorf, AT]
+    subcamp: [Paris]
+- model: gewusel.patrol
+  fields:
+    name: "Verr\xFCckte H\xFChner"
+    group: [Wiener Neudorf, AT]
+    subcamp: [Paris]
+- model: gewusel.patrol
+  fields:
+    name: Faule Faultiere
+    group: [Wiener Neudorf, AT]
+    subcamp: [Paris]
+- model: gewusel.patrol
+  fields:
+    name: "Schnatternde G\xE4nse"
+    group: [Wiener Neudorf, AT]
+    subcamp: [Paris]
+- model: gewusel.patrol
+  fields:
+    name: "Die faulen H\xE4hne"
+    group: [Gars am Kamp, AT]
+    subcamp: [Kairo]
+- model: gewusel.patrol
+  fields:
+    name: blue fluffy unicorn
+    group: [Gloggnitz, AT]
+    subcamp: [Kairo]
+- model: gewusel.patrol
+  fields:
+    name: Terminator
+    group: [Gloggnitz, AT]
+    subcamp: [Kairo]
+- model: gewusel.patrol
+  fields:
+    name: No name
+    group: [Gloggnitz, AT]
+    subcamp: [Kairo]
+- model: gewusel.patrol
+  fields:
+    name: Wildkatzen
+    group: ["Gm\xFCnd", AT]
+    subcamp: [Kairo]
+- model: gewusel.patrol
+  fields:
+    name: Undercover Pfadfinder
+    group: [Hollabrunn, AT]
+    subcamp: [Kairo]
+- model: gewusel.patrol
+  fields:
+    name: "Waffeleinh\xF6rner"
+    group: [Horn, AT]
+    subcamp: [Kairo]
+- model: gewusel.patrol
+  fields:
+    name: Bunte Pandas
+    group: [Krems, AT]
+    subcamp: [Kairo]
+- model: gewusel.patrol
+  fields:
+    name: "W\xF6lfe"
+    group: [Krems, AT]
+    subcamp: [Kairo]
+- model: gewusel.patrol
+  fields:
+    name: Crazy Bats
+    group: [Krems, AT]
+    subcamp: [Kairo]
+- model: gewusel.patrol
+  fields:
+    name: "H\xE4ngebauchschweine"
+    group: [Laa an der Thaya, AT]
+    subcamp: [Kairo]
+- model: gewusel.patrol
+  fields:
+    name: Riesen Gelbbauchunken
+    group: [Laa an der Thaya, AT]
+    subcamp: [Kairo]
+- model: gewusel.patrol
+  fields:
+    name: "\xD6lige Thunfische"
+    group: [Langenlois, AT]
+    subcamp: [Kairo]
+- model: gewusel.patrol
+  fields:
+    name: "Laxenburger L\xF6wen"
+    group: [Laxenburg, AT]
+    subcamp: [Kairo]
+- model: gewusel.patrol
+  fields:
+    name: Diequalderwahl
+    group: [Tulln, AT]
+    subcamp: [Kairo]
+- model: gewusel.patrol
+  fields:
+    name: Dieeineoderkeine
+    group: [Tulln, AT]
+    subcamp: [Kairo]
+- model: gewusel.patrol
+  fields:
+    name: Dieimmerlacht
+    group: [Tulln, AT]
+    subcamp: [Kairo]
+- model: gewusel.patrol
+  fields:
+    name: Wolf
+    group: [Wien 3 St. Hubertus, AT]
+    subcamp: [Kairo]
+- model: gewusel.patrol
+  fields:
+    name: The blue whales
+    group: [Zwettl, AT]
+    subcamp: [Kairo]
+- model: gewusel.patrol
+  fields:
+    name: Pandapinguin
+    group: [Linz 4, AT]
+    subcamp: [Tokio]
+- model: gewusel.patrol
+  fields:
+    name: Panda
+    group: [Lustenau, AT]
+    subcamp: [Tokio]
+- model: gewusel.patrol
+  fields:
+    name: "M\xE4use"
+    group: [Mauerbach Steinbach, AT]
+    subcamp: [Tokio]
+- model: gewusel.patrol
+  fields:
+    name: Pokemon
+    group: [Neunkirchen, AT]
+    subcamp: [Tokio]
+- model: gewusel.patrol
+  fields:
+    name: Silberhechte
+    group: [Neusiedl/See, AT]
+    subcamp: [Tokio]
+- model: gewusel.patrol
+  fields:
+    name: Puten
+    group: [Wien 57 Mauer St. Georgenberg, AT]
+    subcamp: [Tokio]
+- model: gewusel.patrol
+  fields:
+    name: "Streifenh\xF6rnchen"
+    group: [Wien 57 Mauer St. Georgenberg, AT]
+    subcamp: [Tokio]
+- model: gewusel.patrol
+  fields:
+    name: Ziegen
+    group: [Wien 57 Mauer St. Georgenberg, AT]
+    subcamp: [Tokio]
+- model: gewusel.patrol
+  fields:
+    name: "Grash\xFCpfer"
+    group: [Wien 57 Mauer St. Georgenberg, AT]
+    subcamp: [Tokio]
+- model: gewusel.patrol
+  fields:
+    name: "Erdm\xE4nnchen"
+    group: [Wien 57 Mauer St. Georgenberg, AT]
+    subcamp: [Tokio]
+- model: gewusel.patrol
+  fields:
+    name: Wiesel
+    group: [Wien 57 Mauer St. Georgenberg, AT]
+    subcamp: [Tokio]
+- model: gewusel.patrol
+  fields:
+    name: Pink Panthas
+    group: [Wien 57 Mauer St. Georgenberg, AT]
+    subcamp: [Tokio]
+- model: gewusel.patrol
+  fields:
+    name: Fledermaus
+    group: [Wien 6/7 Paxtu, AT]
+    subcamp: [Tokio]
+- model: gewusel.patrol
+  fields:
+    name: Falke
+    group: [Wien 6/7 Paxtu, AT]
+    subcamp: [Tokio]
+- model: gewusel.patrol
+  fields:
+    name: Hermelin
+    group: [Wien 6/7 Paxtu, AT]
+    subcamp: [Tokio]
+- model: gewusel.patrol
+  fields:
+    name: Gemse
+    group: [Wien 6/7 Paxtu, AT]
+    subcamp: [Tokio]
+- model: gewusel.patrol
+  fields:
+    name: "Eisv\xF6gel"
+    group: [Wiener Neustadt 1, AT]
+    subcamp: [Tokio]
+- model: gewusel.patrol
+  fields:
+    name: "Eichh\xF6rnchen"
+    group: [Wiener Neustadt 1, AT]
+    subcamp: [Tokio]
+- model: gewusel.patrol
+  fields:
+    name: "Einh\xF6rner"
+    group: [Wiener Neustadt 1, AT]
+    subcamp: [Tokio]
+- model: gewusel.patrol
+  fields:
+    name: MEWTOW
+    group: [Ybbsitz, AT]
+    subcamp: [Tokio]
+- model: gewusel.patrol
+  fields:
+    name: Adler/Wolf
+    group: [Wien 31 Stadlau, AT]
+    subcamp: [Las Vegas]
+- model: gewusel.patrol
+  fields:
+    name: Steckdosen
+    group: [Baden, AT]
+    subcamp: [Las Vegas]
+- model: gewusel.patrol
+  fields:
+    name: Silberlinge
+    group: [Baden, AT]
+    subcamp: [Las Vegas]
+- model: gewusel.patrol
+  fields:
+    name: Tigersharks
+    group: [Bruck/Leitha, AT]
+    subcamp: [Paris]
+- model: gewusel.patrol
+  fields:
+    name: Black Sheeps
+    group: [Bruck/Leitha, AT]
+    subcamp: [Paris]
+- model: gewusel.patrol
+  fields:
+    name: Grizzlys
+    group: [Langenlois, AT]
+    subcamp: [Kairo]
+- model: gewusel.patrol
+  fields:
+    name: Luchs
+    group: [Altenstadt Levis, AT]
+    subcamp: [Montreal]
+- model: gewusel.patrol
+  fields:
+    name: Panther/Wiesel
+    group: [Altenstadt Levis, AT]
+    subcamp: [Montreal]
+- model: gewusel.patrol
+  fields:
+    name: "Spitzm\xE4use / Eulen"
+    group: [Kierling Gugging, AT]
+    subcamp: [Montreal]
+- model: gewusel.patrol
+  fields:
+    name: "Gl\xFChw\xFCrmchen"
+    group: ["Maria Enzersdorf S\xFCdstadt", AT]
+    subcamp: [Paris]
+- model: gewusel.patrol
+  fields:
+    name: Rehkitz
+    group: [Wien 31 Stadlau, AT]
+    subcamp: [Las Vegas]
+- model: gewusel.patrol
+  fields:
+    name: "Die \xC4pfel"
+    group: [Freundorf-Baumgarten, AT]
+    subcamp: [London]
+- model: gewusel.patrol
+  fields:
+    name: Kolebras
+    group: [Kronstorf, AT]
+    subcamp: [London]
+- model: gewusel.patrol
+  fields:
+    name: Die crazy smilies
+    group: [Trumau, AT]
+    subcamp: [London]
+- model: gewusel.patrol
+  fields:
+    name: Unicorns
+    group: [Markersdorf St. Martin, AT]
+    subcamp: [Paris]
+- model: gewusel.patrol
+  fields:
+    name: Pink fluffy unicorns
+    group: [Klagenfurt 4 Moosburg, AT]
+    subcamp: [Bangkok]
+- model: gewusel.patrol
+  fields:
+    name: Flower Power & Boys
+    group: [Bruck/Leitha, AT]
+    subcamp: [Paris]

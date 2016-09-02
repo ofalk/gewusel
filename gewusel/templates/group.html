@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block title %}{% trans "Group" %}{% endblock %}
+{% block body_block %}
+<center>
+{% if object_list|length > 1 %}
+<div class="panel panel-default" style="width:80%">
+  <div class="panel-heading"><b>{% trans "Groups" %}</b></div>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>{% trans "Name" %}</th>
+        <th>{% trans "Country" %}</th>
+        {% if perms.gewusel.change_group %}
+          <th class="hidden-xs">{% trans "Actions" %}</th>
+        {% endif %}
+      </tr>
+    </thead>
+    <tbody>
+      {% for object in object_list %}
+          <tr>
+            <td>
+              <div class="visible-xs" style="font-size:10px;"><a href="{% url 'group-view-single' object.pk %}">{{ object.name }}</a></div>
+              <div class="hidden-xs"><a href="{% url 'group-view-single' object.pk %}">{{ object.name }}</a></div>
+              <div class="visible-xs" style="font-size:10px;">
+                <a href="{% url 'patrol-edit' object.pk %}">
+                  <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+                </a>
+              </div>
+            </td>
+            <td>
+              <div class="visible-xs" style="font-size:10px;">{{ object.country.nicename }} ({{ object.country.country_code }})</div>
+              <div class="hidden-xs">{{ object.country.nicename }} ({{ object.country.country_code }})</div>
+            </td>
+            {% if perms.gewusel.change_group %}
+            <td class="hidden-xs">
+              <a href="{% url 'group-edit' object.pk %}">
+                <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+              </a>
+            </td>
+            {% endif %}
+          </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% else %}
+{% with object_list.0 as object %}
+<div class="panel panel-default" style="width:80%">
+  <div class="panel-heading"><b>{{ object.name }}</b>
+    {% if perms.gewusel.change_group %}
+      <a href="{% url 'group-edit' object.pk %}">
+      <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+      </a>
+    {% endif %}
+  </div>
+       <table class="table table-hover">
+         <tbody>
+           <tr>
+             <td><b>{% trans "Country" %}</b></td>
+             <td>{{ object.country.nicename }} ({{object.country.country_code }})</td>
+           </tr>
+           <tr>
+             <td rowspan={{ object.patrol_set.all|length|add:1 }}><b>{% trans "Patrols" %}</b></td>
+           </tr>
+           {% for patrol in object.patrol_set.all %}
+             <tr>
+               <td>
+                 <a href="{% url 'patrol-view-single' patrol.pk %}">{{ patrol.name }}</a>
+               </td>
+             </tr>
+           {% endfor %}
+         </tbody>
+       </table>
+</div>
+{% endwith %}
+{% endif %}
+</center>
+
+{% endblock %}

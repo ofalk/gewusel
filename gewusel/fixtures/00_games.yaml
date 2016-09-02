@@ -1,0 +1,147 @@
+- model: gewusel.game
+  pk: 4
+  fields: {name: 0 auf 100}
+- model: gewusel.game
+  pk: 5
+  fields: {name: 'Wo hin genau?'}
+- model: gewusel.game
+  pk: 6
+  fields: {name: Bodyguard}
+- model: gewusel.game
+  pk: 7
+  fields: {name: Geheimschriften}
+- model: gewusel.game
+  pk: 9
+  fields: {name: Stadt Land Pfadi}
+- model: gewusel.game
+  pk: 10
+  fields: {name: XOX}
+- model: gewusel.game
+  pk: 11
+  fields: {name: Vollgas}
+- model: gewusel.game
+  pk: 12
+  fields: {name: So gut ich kann}
+- model: gewusel.game
+  pk: 13
+  fields: {name: Auf leisen Sohlen}
+- model: gewusel.game
+  pk: 15
+  fields: {name: "Das Qu\xE4ntchen Gl\xFCck"}
+- model: gewusel.game
+  pk: 16
+  fields: {name: Ich seh ich seh}
+- model: gewusel.game
+  pk: 17
+  fields: {name: Hole in one}
+- model: gewusel.game
+  pk: 18
+  fields: {name: Flugschule}
+- model: gewusel.game
+  pk: 19
+  fields: {name: Art Attack}
+- model: gewusel.game
+  pk: 20
+  fields: {name: Mission Impossible}
+- model: gewusel.game
+  pk: 21
+  fields: {name: Skitterball}
+- model: gewusel.game
+  pk: 22
+  fields: {name: Alles muss raus}
+- model: gewusel.game
+  pk: 23
+  fields: {name: 3 2 1 Bungee}
+- model: gewusel.game
+  pk: 24
+  fields: {name: Nicht fallen lassen}
+- model: gewusel.game
+  pk: 25
+  fields: {name: Achtung schwerer Transport}
+- model: gewusel.game
+  pk: 26
+  fields: {name: Der Weg ist das Ziel}
+- model: gewusel.game
+  pk: 27
+  fields: {name: Heavy Load}
+- model: gewusel.game
+  pk: 28
+  fields: {name: Gleich und gleich gesellt sich gern}
+- model: gewusel.game
+  pk: 29
+  fields: {name: Dobble}
+- model: gewusel.game
+  pk: 31
+  fields: {name: Kopfnuss}
+- model: gewusel.game
+  pk: 32
+  fields: {name: Der richtige Riecher}
+- model: gewusel.game
+  pk: 33
+  fields: {name: Adlerauge}
+- model: gewusel.game
+  pk: 34
+  fields: {name: "Suche nach der Wei\xDFheit"}
+- model: gewusel.game
+  pk: 35
+  fields: {name: Hide and seek}
+- model: gewusel.game
+  pk: 36
+  fields: {name: Autsch}
+- model: gewusel.game
+  pk: 37
+  fields: {name: Ohren auf}
+- model: gewusel.game
+  pk: 38
+  fields: {name: Catch me if you can}
+- model: gewusel.game
+  pk: 41
+  fields: {name: Unter Druck}
+- model: gewusel.game
+  pk: 42
+  fields: {name: Abfahrt}
+- model: gewusel.game
+  pk: 43
+  fields: {name: Boccia}
+- model: gewusel.game
+  pk: 44
+  fields: {name: Brennen tut's gut}
+- model: gewusel.game
+  pk: 45
+  fields: {name: Feuer frei}
+- model: gewusel.game
+  pk: 46
+  fields: {name: Hey Hey Wickie}
+- model: gewusel.game
+  pk: 47
+  fields: {name: "M\xF6lkky"}
+- model: gewusel.game
+  pk: 48
+  fields: {name: Oben auf}
+- model: gewusel.game
+  pk: 49
+  fields: {name: Passgenauigkeit}
+- model: gewusel.game
+  pk: 50
+  fields: {name: Quidditch}
+- model: gewusel.game
+  pk: 51
+  fields: {name: Schwindelfrei}
+- model: gewusel.game
+  pk: 52
+  fields: {name: Splash I}
+- model: gewusel.game
+  pk: 53
+  fields: {name: Splash II}
+- model: gewusel.game
+  pk: 54
+  fields: {name: Splash III}
+- model: gewusel.game
+  pk: 55
+  fields: {name: Triff mich}
+- model: gewusel.game
+  pk: 56
+  fields: {name: Wo ist die Bohne}
+- model: gewusel.game
+  pk: 57
+  fields: {name: Do not touch}

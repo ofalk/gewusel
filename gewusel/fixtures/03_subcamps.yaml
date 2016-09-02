@@ -1,0 +1,16 @@
+- model: gewusel.subcamp
+  fields: {name: London}
+- model: gewusel.subcamp
+  fields: {name: Sydney}
+- model: gewusel.subcamp
+  fields: {name: Las Vegas}
+- model: gewusel.subcamp
+  fields: {name: Montreal}
+- model: gewusel.subcamp
+  fields: {name: Paris}
+- model: gewusel.subcamp
+  fields: {name: Kairo}
+- model: gewusel.subcamp
+  fields: {name: Tokio}
+- model: gewusel.subcamp
+  fields: {name: Bangkok}

@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block title %}{% trans "Live statistics" %}{% endblock %}
+{% block body_block %}
+<center>
+<div class="panel panel-default" style="width:80%">
+  <div class="panel-heading"><b>{% trans "Live statistics" %}</b></div>
+  <table class="table table-hover" id="stats_table">
+    <thead>
+      <tr>
+        <th>{% trans "Points" %}</th>
+        <th>{% trans "Patrol" %}</th>
+        <th>{% trans "Game" %}</th>
+        <th class="hidden-xs">{% trans "Time entered" %}</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+  <script>
+    var timeout = 5000;
+    var last_id = 0;
+    function check_stats() {
+      $.get("/gewusel/points/json/" + last_id + '/', function(data) {
+        $.each(data.objects, function(i, item) {
+            add_item(item, false);
+        });
+      });
+
+      setTimeout(check_stats, timeout);
+    }
+    function add_item(item, append) {
+      var patrol = $.parseJSON(item.patrol);
+      var game = $.parseJSON(item.game);
+      var table_row = '<tr>';
+      table_row += '<td><span class="badge">' + item.points + '</span></td>';
+      table_row += '<td class="visible-xs" style="font-size:10px;">' + patrol.name + '</td>';
+      table_row += '<td class="hidden-xs">' + patrol.name + '</td>';
+      table_row += '<td class="visible-xs" style="font-size:10px">' + game.name + '</td>';
+      table_row += '<td class="hidden-xs">' + game.name + '</td>';
+      table_row += '<td class="hidden-xs">' + item.datetime_entered + '</td></tr>';
+      if(append == true) {
+        $(stats_table).append(table_row);
+      } else {
+        $('#stats_table > tbody > tr:last').remove();
+        $('#stats_table > tbody > tr:first').before(table_row);
+      }
+      if(last_id < item.pk) {
+        last_id = item.pk;
+      }
+    }
+
+    $('#stats_table').ready(function() {
+      $.get("/gewusel/points/json/", function(data) {
+        $.each(data.objects, function(i, item) {
+            add_item(item, true);
+        });
+      });
+      setTimeout(check_stats, timeout);
+    });
+  </script>
+</div>
+</center>
+
+{% endblock %}

@@ -1,0 +1,168 @@
+- model: gewusel.group
+  fields: {name: Freundorf-Baumgarten, country: [AT]}
+- model: gewusel.group
+  fields: {name: Brixen St. Michael, country: [IT]}
+- model: gewusel.group
+  fields: {name: Kirchberg / Wechsel, country: [AT]}
+- model: gewusel.group
+  fields: {name: Kronstorf, country: [AT]}
+- model: gewusel.group
+  fields: {name: "Kritzendorf-H\xF6flein", country: [AT]}
+- model: gewusel.group
+  fields: {name: Stockerau, country: [AT]}
+- model: gewusel.group
+  fields: {name: "St. P\xF6lten", country: [AT]}
+- model: gewusel.group
+  fields: {name: Trumau, country: [AT]}
+- model: gewusel.group
+  fields: {name: Wien 12 Erzherzog Johann, country: [AT]}
+- model: gewusel.group
+  fields: {name: Wien 66, country: [AT]}
+- model: gewusel.group
+  fields: {name: Wien 80 Enzian, country: [AT]}
+- model: gewusel.group
+  fields: {name: Abtenau, country: [AT]}
+- model: gewusel.group
+  fields: {name: Berndorf, country: [AT]}
+- model: gewusel.group
+  fields: {name: Biedermannsdorf, country: [AT]}
+- model: gewusel.group
+  fields: {name: Graz Umgebung Nord, country: [AT]}
+- model: gewusel.group
+  fields: {name: Klagenfurt 6, country: [AT]}
+- model: gewusel.group
+  fields: {name: Kirchschlag, country: [AT]}
+- model: gewusel.group
+  fields: {name: Maria Enzersdorf Liechtenstein, country: [AT]}
+- model: gewusel.group
+  fields: {name: "St. P\xF6lten Viehofen", country: [AT]}
+- model: gewusel.group
+  fields: {name: "Th\xFCringen St. Stephan", country: [AT]}
+- model: gewusel.group
+  fields: {name: Wien 55 Hugo v. Hoffmansthal, country: [AT]}
+- model: gewusel.group
+  fields: {name: Absdorf St. Mauritius, country: [AT]}
+- model: gewusel.group
+  fields: {name: Frauental-Rassach, country: [AT]}
+- model: gewusel.group
+  fields: {name: Klagenfurt 4 Moosburg, country: [AT]}
+- model: gewusel.group
+  fields: {name: Kaltenleutgeben, country: [AT]}
+- model: gewusel.group
+  fields: {name: Karlstetten, country: [AT]}
+- model: gewusel.group
+  fields: {name: Leoben, country: [AT]}
+- model: gewusel.group
+  fields: {name: "P\xF6chlarn", country: [AT]}
+- model: gewusel.group
+  fields: {name: Schwanberg, country: [AT]}
+- model: gewusel.group
+  fields: {name: Telfs, country: [AT]}
+- model: gewusel.group
+  fields: {name: Wien 21 Liechtenstein, country: [AT]}
+- model: gewusel.group
+  fields: {name: Wien 28 St. Georg Kagran, country: [AT]}
+- model: gewusel.group
+  fields: {name: Zams, country: [AT]}
+- model: gewusel.group
+  fields: {name: Aschbach, country: [AT]}
+- model: gewusel.group
+  fields: {name: Baden, country: [AT]}
+- model: gewusel.group
+  fields: {name: Ebreichsdorf, country: [AT]}
+- model: gewusel.group
+  fields: {name: Feldkirch St. Georg, country: [AT]}
+- model: gewusel.group
+  fields: {name: Graz 2, country: [AT]}
+- model: gewusel.group
+  fields: {name: Gumpoldskirchen, country: [AT]}
+- model: gewusel.group
+  fields: {name: Klosterneuburg Weidling, country: [AT]}
+- model: gewusel.group
+  fields: {name: Wien 31 Stadlau, country: [AT]}
+- model: gewusel.group
+  fields: {name: Altenstadt Levis, country: [AT]}
+- model: gewusel.group
+  fields: {name: Amstetten, country: [AT]}
+- model: gewusel.group
+  fields: {name: Gablitz, country: [AT]}
+- model: gewusel.group
+  fields: {name: Pfadfinderstamm Eppan, country: [IT]}
+- model: gewusel.group
+  fields: {name: Kierling Gugging, country: [AT]}
+- model: gewusel.group
+  fields: {name: Schwechat, country: [AT]}
+- model: gewusel.group
+  fields: {name: Strasshof, country: [AT]}
+- model: gewusel.group
+  fields: {name: Wien 18 Mafeking, country: [AT]}
+- model: gewusel.group
+  fields: {name: Wien 20/26, country: [AT]}
+- model: gewusel.group
+  fields: {name: Wien 41 Prinz Eugen, country: [AT]}
+- model: gewusel.group
+  fields: {name: Wien 5, country: [AT]}
+- model: gewusel.group
+  fields: {name: Zeiselmauer, country: [AT]}
+- model: gewusel.group
+  fields: {name: Atzenbrugg-Heiligeneich, country: [AT]}
+- model: gewusel.group
+  fields: {name: Bruck/Leitha, country: [AT]}
+- model: gewusel.group
+  fields: {name: Klagenfurt 5 Prinz Eugen, country: [AT]}
+- model: gewusel.group
+  fields: {name: Lilienfeld, country: [AT]}
+- model: gewusel.group
+  fields: {name: Jules Bleser Monnerech, country: [LU]}
+- model: gewusel.group
+  fields: {name: Markersdorf St. Martin, country: [AT]}
+- model: gewusel.group
+  fields: {name: "Maria Enzersdorf S\xFCdstadt", country: [AT]}
+- model: gewusel.group
+  fields: {name: Wien 36, country: [AT]}
+- model: gewusel.group
+  fields: {name: Wiener Neudorf, country: [AT]}
+- model: gewusel.group
+  fields: {name: Gars am Kamp, country: [AT]}
+- model: gewusel.group
+  fields: {name: Gloggnitz, country: [AT]}
+- model: gewusel.group
+  fields: {name: "Gm\xFCnd", country: [AT]}
+- model: gewusel.group
+  fields: {name: Hollabrunn, country: [AT]}
+- model: gewusel.group
+  fields: {name: Horn, country: [AT]}
+- model: gewusel.group
+  fields: {name: Krems, country: [AT]}
+- model: gewusel.group
+  fields: {name: Laa an der Thaya, country: [AT]}
+- model: gewusel.group
+  fields: {name: Langenlois, country: [AT]}
+- model: gewusel.group
+  fields: {name: Laxenburg, country: [AT]}
+- model: gewusel.group
+  fields: {name: Tulln, country: [AT]}
+- model: gewusel.group
+  fields: {name: Wien 3 St. Hubertus, country: [AT]}
+- model: gewusel.group
+  fields: {name: Wiener Neustadt 2, country: [AT]}
+- model: gewusel.group
+  fields: {name: Zwettl, country: [AT]}
+- model: gewusel.group
+  fields: {name: Linz 4, country: [AT]}
+- model: gewusel.group
+  fields: {name: Lustenau, country: [AT]}
+- model: gewusel.group
+  fields: {name: Mauerbach Steinbach, country: [AT]}
+- model: gewusel.group
+  fields: {name: Neunkirchen, country: [AT]}
+- model: gewusel.group
+  fields: {name: Neusiedl/See, country: [AT]}
+- model: gewusel.group
+  fields: {name: Wien 57 Mauer St. Georgenberg, country: [AT]}
+- model: gewusel.group
+  fields: {name: Wien 6/7 Paxtu, country: [AT]}
+- model: gewusel.group
+  fields: {name: Wiener Neustadt 1, country: [AT]}
+- model: gewusel.group
+  fields: {name: Ybbsitz, country: [AT]}

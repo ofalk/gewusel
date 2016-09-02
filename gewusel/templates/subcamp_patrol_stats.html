@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block title %}{% trans "Subcamp" %}{% endblock %}
+{% block body_block %}
+<center>
+    {% with object_list.0 as object %}
+    <div class="panel panel-default" style="width:80%">
+      <div class="panel-heading"><b>{{ object.name }}</b>
+      </div>
+      <table class="table table-hover">
+        <tbody>
+          <tr>
+            <td rowspan={{ object.patrol_set.all|length|add:1 }}><b>{% trans "Patrols" %}</b></td>
+          </tr>
+          {% for patrol in patrols %}
+            <tr>
+              <td>
+                <span class="badge">
+                  {{ patrol.patrol__points__points__sum }}
+                </span>
+              </td>
+              <td>
+                {{ patrol.patrol__name }}
+              </td>
+              <td>
+                {{ patrol.patrol__group__name }}
+              </td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    {% endwith %}
+</center>
+
+{% endblock %}

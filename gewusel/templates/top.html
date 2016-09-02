@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block title %}{% trans "Top 10" %}{% endblock %}
+{% block body_block %}
+<div class="container-fluid">
+  <div class="row">
+    {% if setting.stats_viewable == "0" %}
+      <div class="col-xs-12 col-md-6 col-sm-6">
+        <div class="panel panel-warning">
+          <div class="panel-heading"><b>{% trans "Top patrols" %}</b></div>
+          <div style="text-align:center; padding:10px;">{% trans 'The patrol stats are public accessible at a later point' %}</div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-6 col-sm-6">
+        {% include 'topsubcamps.html' %}
+      </div>
+    {% else %}
+      <div class="col-xs-12 col-md-6 col-sm-6">
+        {% include 'toppatrols.html' %}
+      </div>
+      <div class="col-xs-12 col-md-6 col-sm-6">
+        {% include 'topsubcamps.html' %}
+        <canvas id="toppatrols" width="50%" height="26%"></canvas>
+      </div>
+    {% endif %}
+  </div> <!-- row -->
+</div> <!-- container -->
+
+{% endblock %}

@@ -1,0 +1,3 @@
+eb init -p python3.4 pfadi
+eb init
+eb create pfadi-dev --database --database.username gewusel --database.password gewusel456 --database.engine mysql --database.instance db.t2.micro

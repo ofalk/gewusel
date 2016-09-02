@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block title %}{% trans "Patrols" %}{% endblock %}
+{% block body_block %}
+<center>
+  {% if object_list|length > 1 %}
+    <div class="panel panel-default" style="width:80%">
+      <div class="panel-heading"><b>{% trans "Patrols" %}</b></div>
+      <div class="table-responsive">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>{% trans "Name" %}</th>
+            <th>{% trans "Group" %}</th>
+            <th class="hidden-xs">{% trans "Country" %}</th>
+            <th class="hidden-xs">{% trans "Subcamp" %}</th>
+            {% if perms.gewusel.change_patrol %}
+              <th class="hidden-xs">{% trans "Actions" %}</th>
+            {% endif %}
+          </tr>
+        </thead>
+        <tbody>
+          {% for object in object_list %}
+              <tr>
+                <td>
+                  <div class="visible-xs" style="font-size:10px;"><a href="{% url 'patrol-view-single' object.pk %}">{{ object.name }}</a></div>
+                  <div class="hidden-xs"><a href="{% url 'patrol-view-single' object.pk %}">{{ object.name }}</a></div>
+                  <div class="visible-xs" style="font-size:8px;">
+                    <a href="{% url 'patrol-edit' object.pk %}">
+                      <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+                    </a>
+                    <p><a href="{% url 'subcamp-view-single' object.subcamp.pk %}">{{ object.subcamp.name }}</a></p>
+                  </div>
+                </td>
+                <td>
+                  <div class="visible-xs" style="font-size:10px;"><a href="{% url 'group-view-single' object.group.pk %}">{{ object.group.name }}</a></div>
+                  <div class="hidden-xs"><a href="{% url 'group-view-single' object.group.pk %}">{{ object.group.name }}</a></div>
+                  <div class="visible-xs" style="font-size:8px">
+                    {{ object.group.country.nicename }} ({{ object.group.country.country_code }})
+                  </div>
+                </td>
+                <td class="hidden-xs">{{ object.group.country.nicename }} ({{ object.group.country.country_code }})</td>
+                <td class="hidden-xs"><a href="{% url 'subcamp-view-single' object.subcamp.pk %}">{{ object.subcamp.name }}</a></td>
+                {% if perms.gewusel.change_patrol %}
+                <td class="hidden-xs">
+                  <a href="{% url 'patrol-edit' object.pk %}">
+                    <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+                  </a>
+                </td>
+                {% endif %}
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  {% else %}
+{% with object_list.0 as object %}
+<div class="panel panel-default" style="width:80%">
+  <div class="panel-heading"><b>{{ object.name }}</b>
+    {% if perms.gewusel.change_patrol %}
+      <a href="{% url 'patrol-edit' object.pk %}">
+      <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+      </a>
+    {% endif %}
+  </div>
+  <table class="table table-hover">
+    <tbody>
+      <tr>
+        <td><b>{% trans "Group" %}</b></td>
+        <td><a href="{% url 'group-view-single' object.group.pk %}">{{ object.group.name }}</a></td>
+      </tr>
+      <tr>
+        <td><b>{% trans "Subcamp" %}</b></td>
+        <td><a href="{% url 'subcamp-view-single' object.subcamp.pk %}">{{ object.subcamp.name }}</a></td>
+      </tr>
+
+      <tr>
+        <td><b>{% trans "Points" %}</b></td>
+        <td>
+          {% for points in object.points_set.all %}
+          <ul>
+            <li>
+              <a href="{% url 'points-view-single' points.pk %}">{{ points.game.name }} ({{ points.points }})</a>
+            </li>
+          </ul>
+          {% empty %}
+            {% trans "No points yet" %}!
+          {% endfor %}
+        </td>
+      </td>
+    </tbody>
+  </table>
+</div>
+{% endwith %}
+
+  {% endif %}
+</center>
+
+{% endblock %}
