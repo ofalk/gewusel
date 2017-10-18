@@ -94,6 +94,17 @@ if 'RDS_DB_NAME' in os.environ:
             'PORT': os.environ['RDS_PORT'],
         }
     }
+elif RDS_DB_NAME != '':
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': RDS_DB_NAME,
+            'USER': RDS_USERNAME,
+            'PASSWORD': RDS_PASSWORD,
+            'HOST': RDS_HOSTNAME,
+            'PORT': RDS_PORT,
+        }
+    }
 else:
     DATABASES = {
         'default': {
