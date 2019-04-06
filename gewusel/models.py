@@ -1,6 +1,6 @@
 from django.conf import settings
 from django.db import models
-from django.core.urlresolvers import reverse
+from django.urls import reverse
 from django.db.models import Sum
 
 # Create your models here.
@@ -128,7 +128,7 @@ class Points(models.Model):
   patrol = models.ForeignKey(Patrol, on_delete=models.CASCADE)
   game = models.ForeignKey(Game, on_delete=models.CASCADE)
   datetime_entered = models.DateTimeField(auto_now_add=True, blank=True, editable=False)
-  entered_by = models.ForeignKey(settings.AUTH_USER_MODEL, editable=False)
+  entered_by = models.ForeignKey(settings.AUTH_USER_MODEL, editable=False, on_delete=models.CASCADE)
 
   class Meta:
     ordering = ['-datetime_entered']
