@@ -34,7 +34,7 @@
                             <div class="form-group input-group" style="width:100%;">{{ user.email }}</div>
                           </div>
                           <div class="form-group">
-                            <label>{% trans 'Gravatar' %}:
+                            <label>{% trans 'Avatar (from Libravatar)' %}:
                               <br/><a style="font-size:9px;" href="{% gravatar_profile_url user.email %}">{% trans 'Change' %}</a>
                             </label>
                             <div class="form-group input-group" style="width:100%;"><img src="{% gravatar_url user.email %}"/></div>
