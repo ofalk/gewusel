@@ -1,5 +1,5 @@
 # Imports
-from django.core.urlresolvers import reverse
+from django.urls import reverse
 from django.http import JsonResponse, HttpResponseForbidden, HttpResponse
 from django.utils.translation import (
   LANGUAGE_SESSION_KEY, TranslatorCommentWarning, trim_whitespace,
