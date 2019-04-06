@@ -10,3 +10,9 @@ temp/*
 !.elasticbeanstalk/*.global.yml
 
 config.py
+
+# Ignore virtualenv
+.virtualenv
+
+# Ignore static
+static/
