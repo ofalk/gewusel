@@ -42,6 +42,11 @@
               {{ form.country.label_tag }}
               {{ form.country }}{{ form.country.errors }}
             </div>
+            <script>
+              if($('#id_country').length == 1) {
+                $('#id_country')[0][1].selected = true;
+              }
+            </script>
 
             <div class="form-group input-group" style="width:100%;">
               <label for="group">{% trans "Group" %}:</label>
