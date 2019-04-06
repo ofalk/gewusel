@@ -101,7 +101,6 @@
                 {% else %}
                   <li><a href="{% url 'social:begin' 'facebook' %}?next={{ request.path }}">Facebook</a></li>
                   <li><a href="{% url 'social:begin' 'google-oauth2' %}?next={{ request.path }}">Google</a></li>
-                  <li><a href="{% url 'social:begin' 'twitter' %}?next={{ request.path }}">Twitter</a></li>
                 {% endif %}
                 {% if user.is_staff %}
                 <li role="separator" class="divider"></li>

@@ -1,7 +1,7 @@
 Gewusel
 =======
 
-Very simplistic Django application with Facebook, Twitter, Google
+Very simplistic Django application with Facebook, Google
 authentication allowing scout masters to keep track of points
 their patrols achieved during the "Das große Gewusel".
 
@@ -13,7 +13,7 @@ Use
 ===
 
 Add subcamps, groups and patrols using the Django management interface.
-Let the scout masters login via Facebook, Twitter, Google (depending on your
+Let the scout masters login via Facebook, Google (depending on your
 social auth configuration), give them the rights to add points (again,
 in the Django mangement interface) and you are ready to go.
 
@@ -23,9 +23,6 @@ Configuration
 Add the following to your config.py:
 - SOCIAL_AUTH_FACEBOOK_KEY = XXX - your Facebook application key - XXX
 - SOCIAL_AUTH_FACEBOOK_SECRET = XXX - your Facebook application secret - XXX
-
-- SOCIAL_AUTH_TWITTER_KEY = XXX - your Twitter application key - XXX
-- SOCIAL_AUTH_TWITTER_SECRET = XXX - your Twitter application secret - XXX
 
 - SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = XXX - your Google application key - XXX
 - SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = XXX - your Google application secret - XXX
