@@ -6,7 +6,7 @@ authentication allowing scout masters to keep track of points
 their patrols achieved during the "Das große Gewusel".
 
 "Das große Gewusel" was a game we played during Pinakarri
-(www.pinakarri.at - no longer online), in summer 2016. Pinakarri
+(~~www.pinakarri.at~~ - no longer online), in summer 2016. Pinakarri
 was an international Jamboree of the the Lower Austrian scouts and guides.
 
 Use
