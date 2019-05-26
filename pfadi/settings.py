@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/1.9/ref/settings/
 """
 
 import os
-from config import *
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -81,6 +80,8 @@ WSGI_APPLICATION = 'pfadi.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
+
+from config import *
 
 if 'RDS_DB_NAME' in os.environ:
     DATABASES = {
@@ -185,3 +186,5 @@ SOCIAL_AUTH_PIPELINE = (
 
 GRAVATAR_URL = 'https://libravatar.org/'
 GRAVATAR_SECURE_URL = 'https://libravatar.org/'
+
+from config import *
