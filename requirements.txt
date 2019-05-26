@@ -16,7 +16,6 @@ oauthlib
 pathspec
 pyasn1
 PyJWT
-PyMySQL
 python-dateutil
 python-jose
 python-social-auth
@@ -36,3 +35,4 @@ urllib3
 virtualenv
 wcwidth
 websocket-client
+mysqlclient
